@@ -56,9 +56,9 @@ def connect(mqtt_client, mqtt_username, mqtt_password, broker_endpoint, port):
             # mqtt_client.tls_insecure_set(False)
             # mqtt_client.connect(broker_endpoint, port=port)
             
-            mqtt_client.tls_set(ca_certs='../certs/AmazonRootCA1.pem',
-               certfile='../certs/b9bda2587a2e0d95b12f6051cbe320073f539fbb3a809f4937b9fac3f9078e87-certificate.pem.crt', \
-               keyfile ='../certs/b9bda2587a2e0d95b12f6051cbe320073f539fbb3a809f4937b9fac3f9078e87-private.pem.key', \
+            mqtt_client.tls_set(ca_certs='mintsXU4/certs/AmazonRootCA1.pem',
+               certfile='mintsXU4/certs/b9bda2587a2e0d95b12f6051cbe320073f539fbb3a809f4937b9fac3f9078e87-certificate.pem.crt', \
+               keyfile ='mintsXU4/certs/b9bda2587a2e0d95b12f6051cbe320073f539fbb3a809f4937b9fac3f9078e87-private.pem.key', \
                tls_version=ssl.PROTOCOL_SSLv23)
             mqtt_client.tls_insecure_set(True)
             mqtt_client.connect("a1sy4v3syxrxsq-ats.iot.us-east-1.amazonaws.com", 8883, 60) #Taken from REST API endpoint - Use your own. 
